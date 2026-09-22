@@ -247,6 +247,55 @@
   .award-card .cat{font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--red-1); margin-bottom:6px;}
   .award-card .name{font-family:'Oswald',sans-serif; font-size:17px; font-weight:600; text-transform:uppercase; color:var(--silver-1);}
 
+  /* ---------- DEMO SISTEM ---------- */
+  .demo-showcase{margin:46px 0 8px;}
+  .demo-grid{display:grid; grid-template-columns:1.35fr 0.65fr; gap:36px; align-items:start;}
+
+  .demo-browser{background:var(--black-2); border:1px solid var(--line); border-radius:14px; overflow:hidden; box-shadow:0 30px 60px rgba(0,0,0,.5);}
+  .demo-browser-bar{display:flex; align-items:center; gap:7px; padding:11px 14px; background:var(--black-3); border-bottom:1px solid var(--line);}
+  .demo-browser-dot{width:9px; height:9px; border-radius:50%; background:var(--silver-4); opacity:.5;}
+  .demo-browser-dot.on{background:var(--red-1); opacity:1;}
+  .demo-browser-url{margin-left:8px; flex:1; background:var(--black); border:1px solid var(--line); border-radius:6px; padding:5px 12px; font-family:'IBM Plex Mono',monospace; font-size:10px; color:var(--silver-3); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+  .demo-browser-body{display:flex; min-height:320px;}
+  .demo-sidebar{width:142px; flex-shrink:0; background:var(--black); border-right:1px solid var(--line); padding:14px 0;}
+  .demo-sidebar-group{padding:12px 16px 5px; font-family:'IBM Plex Mono',monospace; font-size:8.5px; letter-spacing:.12em; text-transform:uppercase; color:var(--silver-4);}
+  .demo-sidebar-item{padding:8px 16px; font-size:10px; color:var(--silver-3); border-left:2px solid transparent; letter-spacing:.01em;}
+  .demo-sidebar-item.active{color:var(--red-1); border-left-color:var(--red-1); background:rgba(232,35,47,.08); font-weight:600;}
+  .demo-main{flex:1; min-width:0; padding:18px 20px; background:var(--black-2);}
+  .demo-main-title{font-family:'Oswald',sans-serif; font-size:14px; text-transform:uppercase; letter-spacing:.03em; color:var(--silver-1); margin-bottom:3px;}
+  .demo-main-sub{font-size:10px; color:var(--silver-4); margin-bottom:14px;}
+  .demo-stats{display:grid; grid-template-columns:repeat(4,1fr); gap:9px; margin-bottom:16px;}
+  .demo-stat{background:var(--black-3); border:1px solid var(--line); border-radius:8px; padding:9px 11px;}
+  .demo-stat-label{font-family:'IBM Plex Mono',monospace; font-size:7.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--silver-4);}
+  .demo-stat-value{font-family:'Oswald',sans-serif; font-size:17px; color:var(--red-1); margin-top:3px;}
+  .demo-table-wrap{overflow-x:auto; -webkit-overflow-scrolling:touch;}
+  .demo-table{width:100%; min-width:300px; border-collapse:collapse; font-size:9.5px;}
+  .demo-table th{text-align:left; color:var(--silver-4); font-weight:400; padding:5px 6px; font-size:8px; text-transform:uppercase; letter-spacing:.04em;}
+  .demo-table td{padding:5px 6px; color:var(--silver-2); border-top:1px solid var(--line); white-space:nowrap;}
+  .demo-dot-row{display:flex; gap:2px;}
+  .demo-dotc{width:6px; height:6px; border-radius:2px; background:var(--line);}
+  .demo-dotc.on{background:var(--red-1);}
+
+  .demo-phone-wrap{display:flex; justify-content:center;}
+  .demo-phone{width:220px; background:var(--black); border:6px solid var(--black-3); border-radius:32px; box-shadow:0 30px 60px rgba(0,0,0,.5); overflow:hidden; position:relative;}
+  .demo-phone-notch{position:absolute; top:0; left:50%; transform:translateX(-50%); width:64px; height:15px; background:var(--black-3); border-radius:0 0 9px 9px; z-index:2;}
+  .demo-phone-screen{padding:24px 13px 0;}
+  .demo-phone-greet{font-family:'Oswald',sans-serif; font-size:13px; color:var(--silver-1); margin-bottom:2px;}
+  .demo-phone-sub{font-size:9px; color:var(--silver-4); margin-bottom:13px;}
+  .demo-phone-card{background:var(--black-2); border:1px solid var(--line); border-radius:10px; padding:10px 11px; margin-bottom:9px;}
+  .demo-phone-card .label{font-family:'IBM Plex Mono',monospace; font-size:7.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--silver-4); margin-bottom:5px;}
+  .demo-phone-card .value{font-family:'Oswald',sans-serif; font-size:14px; color:var(--silver-1);}
+  .demo-phone-check{margin-top:7px; display:inline-flex; align-items:center; gap:5px; background:rgba(232,35,47,.12); border:1px solid rgba(232,35,47,.35); color:var(--red-1); font-size:9px; padding:4px 9px; border-radius:20px;}
+  .demo-phone-voucher{display:flex; justify-content:space-between; font-size:9px; padding:5px 0; border-top:1px solid var(--line); color:var(--silver-3);}
+  .demo-phone-voucher:first-of-type{border-top:none;}
+  .demo-phone-nav{display:flex; justify-content:space-around; padding:10px 0 12px; margin-top:4px; border-top:1px solid var(--line); background:var(--black-2); font-size:13px;}
+  .demo-phone-nav span{color:var(--silver-4);}
+  .demo-phone-nav span.active{color:var(--red-1);}
+
+  .demo-cta{margin-top:30px; text-align:center;}
+  .demo-cta-note{font-size:11px; color:var(--silver-3); margin-top:13px; line-height:1.7;}
+  .demo-cta-note code{background:var(--black-3); padding:2px 7px; border-radius:5px; color:var(--red-1); font-family:'IBM Plex Mono',monospace;}
+
   /* ---------- SERVICES ---------- */
   .services-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
   .service-card{background:var(--black); padding:38px 30px; transition:background .3s ease;}
@@ -328,7 +377,7 @@
   @media (max-width:920px){
     .nav-links, header .btn-primary{display:none;}
     .burger{display:flex;}
-    .about-grid, .award-grid, .contact-grid{grid-template-columns:1fr; gap:44px;}
+    .about-grid, .award-grid, .contact-grid, .demo-grid{grid-template-columns:1fr; gap:44px;}
     .services-grid{grid-template-columns:repeat(2,1fr);}
     .outlet-grid{grid-template-columns:repeat(3,1fr);}
     .process-grid{grid-template-columns:1fr; gap:36px;}
@@ -343,6 +392,13 @@
     .hero-logo-coin{width:150px; height:150px; padding:18px;}
     .hero-badge-wrap{top:78px; right:14px;}
     .hero-badge-coin{width:44px; height:44px; padding:6px;}
+    .demo-sidebar{width:82px;}
+    .demo-sidebar-item{padding:6px 9px; font-size:8.5px;}
+    .demo-sidebar-group{padding:9px 9px 4px; font-size:7.5px;}
+    .demo-stats{grid-template-columns:repeat(2,1fr);}
+    .demo-main{padding:13px;}
+    .demo-table{font-size:8px;}
+    .demo-phone{width:190px;}
   }
 
   .mobile-menu{
@@ -531,10 +587,133 @@
   <div class="wrap">
     <div class="section-head reveal">
       <span class="eyebrow">Aplikasi</span>
-      <h2>Unduh Aplikasi Dear Management</h2>
-      <p>Untuk talent, Kepala Mess, dan tim kantor — cek absensi, voucher, kasbon, dan slip gaji langsung dari HP atau komputer.</p>
+      <h2>Sistem AR Corp HR — Dipakai Dear Management</h2>
+      <p>Satu sistem untuk absensi GPS, pendapatan/voucher Tera, kasbon, hingga slip gaji — dipakai tim kantor Dear Management sehari-hari. Tampilan di bawah ini ilustrasi sederhana dari sistem aslinya.</p>
     </div>
-    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:8px;">
+
+    <div class="demo-showcase reveal">
+      <div class="demo-grid">
+        <div class="demo-browser">
+          <div class="demo-browser-bar">
+            <span class="demo-browser-dot on"></span>
+            <span class="demo-browser-dot"></span>
+            <span class="demo-browser-dot"></span>
+            <span class="demo-browser-url">app.dearmanagement.id/admin/absensi-harian</span>
+          </div>
+          <div class="demo-browser-body">
+            <div class="demo-sidebar">
+              <div class="demo-sidebar-group">Data Karyawan</div>
+            <div class="demo-sidebar-item">Data Karyawan</div>
+            <div class="demo-sidebar-item">Data Tera</div>
+            <div class="demo-sidebar-item active">Absensi Harian</div>
+            <div class="demo-sidebar-item">Kasbon</div>
+            <div class="demo-sidebar-item">Lokasi &amp; Absensi</div>
+            <div class="demo-sidebar-item">Kalender</div>
+            <div class="demo-sidebar-item">Rincian Totalan</div>
+            </div>
+            <div class="demo-main">
+              <div class="demo-main-title">Absensi Harian</div>
+              <div class="demo-main-sub">September 2026 · Self check-in per outlet</div>
+              <div class="demo-stats">
+                <div class="demo-stat">
+                  <div class="demo-stat-label">Total Terdaftar</div>
+                  <div class="demo-stat-value">8</div>
+                </div>
+                <div class="demo-stat">
+                  <div class="demo-stat-label">Total VCR Bulan Ini</div>
+                  <div class="demo-stat-value">Rp 12,4jt</div>
+                </div>
+                <div class="demo-stat">
+                  <div class="demo-stat-label">Rata-rata % Hadir</div>
+                  <div class="demo-stat-value">92%</div>
+                </div>
+                <div class="demo-stat">
+                  <div class="demo-stat-label">Hari Kalender</div>
+                  <div class="demo-stat-value">30</div>
+                </div>
+              </div>
+              <div class="demo-table-wrap"><table class="demo-table">
+                <thead>
+                  <tr><th>Nama</th><th>Absensi</th><th style="text-align:right;">Hadir</th><th style="text-align:right;">%</th></tr>
+                </thead>
+                <tbody>
+              <tr>
+                <td>Salsa Ramadhani<br><span style="color:var(--silver-4); font-size:8.5px;">Tera · Outlet Kemang</span></td>
+                <td><div class="demo-dot-row"><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span></div></td>
+                <td style="text-align:right;">24</td>
+                <td style="text-align:right; color:var(--red-1);">96%</td>
+              </tr>
+              <tr>
+                <td>Nadia Putri<br><span style="color:var(--silver-4); font-size:8.5px;">Tera · Outlet Senopati</span></td>
+                <td><div class="demo-dot-row"><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc"></span></div></td>
+                <td style="text-align:right;">22</td>
+                <td style="text-align:right; color:var(--red-1);">88%</td>
+              </tr>
+              <tr>
+                <td>Alya Maharani<br><span style="color:var(--silver-4); font-size:8.5px;">Tera · Outlet PIK</span></td>
+                <td><div class="demo-dot-row"><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span></div></td>
+                <td style="text-align:right;">25</td>
+                <td style="text-align:right; color:var(--red-1);">100%</td>
+              </tr>
+              <tr>
+                <td>Budi Santoso<br><span style="color:var(--silver-4); font-size:8.5px;">Karyawan · Kantor Pusat</span></td>
+                <td><div class="demo-dot-row"><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span></div></td>
+                <td style="text-align:right;">23</td>
+                <td style="text-align:right; color:var(--red-1);">92%</td>
+              </tr>
+              <tr>
+                <td>Andi Wijaya<br><span style="color:var(--silver-4); font-size:8.5px;">Karyawan · Kantor Pusat</span></td>
+                <td><div class="demo-dot-row"><span class="demo-dotc on"></span><span class="demo-dotc"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc on"></span><span class="demo-dotc"></span><span class="demo-dotc on"></span></div></td>
+                <td style="text-align:right;">21</td>
+                <td style="text-align:right; color:var(--red-1);">84%</td>
+              </tr>
+                </tbody>
+              </table></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="demo-phone-wrap">
+          <div class="demo-phone">
+            <div class="demo-phone-notch"></div>
+            <div class="demo-phone-screen">
+              <div class="demo-phone-greet">Halo, Salsa 👋</div>
+              <div class="demo-phone-sub">Tera · Outlet Kemang</div>
+              <div class="demo-phone-card">
+                <div class="label">Absensi Hari Ini</div>
+                <div class="value">Sudah Absen</div>
+                <div class="demo-phone-check">✓ Tercatat 19:04</div>
+              </div>
+              <div class="demo-phone-card">
+                <div class="label">Slip Gaji September</div>
+                <div class="value">Rp 3.200.000</div>
+              </div>
+              <div class="demo-phone-card">
+                <div class="label">Pendapatan Bulan Ini</div>
+                <div class="demo-phone-voucher"><span>Klien A · Platinum</span><span>Rp 400rb</span></div>
+                <div class="demo-phone-voucher"><span>Klien B · Platinum</span><span>Rp 400rb</span></div>
+                <div class="demo-phone-voucher"><span>Klien C · Platinum</span><span>Rp 400rb</span></div>
+              </div>
+            </div>
+            <div class="demo-phone-nav">
+              <span class="active">⌂</span>
+              <span>🎫</span>
+              <span>💵</span>
+              <span>👤</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-cta">
+        <a class="btn btn-primary" href="https://dear-management-hr-production.up.railway.app/login" target="_blank" rel="noopener">Coba Demo Sekarang</a>
+        <div class="demo-cta-note">
+          Pilih tab <strong>STAFF &amp; PR</strong>, masuk dengan kode <code>DEMO-01</code> — kode verifikasi otomatis tampil di layar, tanpa email/WA asli.
+        </div>
+      </div>
+    </div>
+
+    <div class="reveal" style="display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:34px; padding-top:28px; border-top:1px solid var(--line);">
       <a class="btn btn-primary" href="https://dear-management-hr-production.up.railway.app/downloads/arcorp.apk" download>Unduh Aplikasi Android (APK)</a>
       <a class="btn btn-ghost" href="https://dear-management-hr-production.up.railway.app/downloads/desktop">Unduh Desktop (Windows)</a>
     </div>
