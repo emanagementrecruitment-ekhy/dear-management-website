@@ -222,14 +222,15 @@
   .award-title{font-size:clamp(26px,3.6vw,38px); font-weight:600; line-height:1.15; font-family:'Oswald',sans-serif; text-transform:uppercase;}
   .award-title .accent-thin{-webkit-text-stroke:1px var(--silver-3); color:transparent; font-weight:600;}
   .award-text p{color:var(--silver-2); font-size:16px; line-height:1.85; margin:0;}
-  .award-image img{width:100%; height:auto; filter:drop-shadow(0 22px 40px rgba(0,0,0,.55));}
-  @media (prefers-reduced-motion: reduce){ .award-coin{animation:none;} }
+  .award-image{perspective:1400px;}
+  .award-image img{width:100%; height:auto; filter:drop-shadow(0 22px 40px rgba(0,0,0,.55)); animation:coin-spin 10s linear infinite;}
+  @media (prefers-reduced-motion: reduce){ .award-coin, .award-image img, .award-card img{animation:none;} }
   .award-categories{margin-top:60px; padding-top:44px; border-top:1px solid var(--line);}
   .award-categories-label{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--silver-3); margin-bottom:22px;}
   .award-cards{display:grid; grid-template-columns:repeat(auto-fill,minmax(200px,240px)); justify-content:start; gap:24px;}
-  .award-card{background:var(--black-2); border:1px solid var(--line); border-radius:4px; padding:22px 20px 24px; text-align:center; transition:transform .3s ease, border-color .3s ease;}
+  .award-card{background:var(--black-2); border:1px solid var(--line); border-radius:4px; padding:22px 20px 24px; text-align:center; transition:transform .3s ease, border-color .3s ease; perspective:1000px;}
   .award-card:hover{transform:translateY(-4px); border-color:var(--red-1);}
-  .award-card img{width:100%; height:auto; margin-bottom:16px; filter:drop-shadow(0 14px 26px rgba(0,0,0,.5));}
+  .award-card img{width:100%; height:auto; margin-bottom:16px; filter:drop-shadow(0 14px 26px rgba(0,0,0,.5)); animation:coin-spin 8s linear infinite;}
   .award-card .cat{font-family:'IBM Plex Mono',monospace; font-size:10.5px; letter-spacing:0.12em; text-transform:uppercase; color:var(--red-1); margin-bottom:6px;}
   .award-card .name{font-family:'Oswald',sans-serif; font-size:17px; font-weight:600; text-transform:uppercase; color:var(--silver-1);}
 
